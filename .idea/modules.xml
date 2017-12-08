@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TP3-Desenvolvimento-Rodrigo-Filomeno.iml" filepath="$PROJECT_DIR$/TP3-Desenvolvimento-Rodrigo-Filomeno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TP3DesenvolvimentoRodrigoFilomeno.iml" filepath="$PROJECT_DIR$/TP3DesenvolvimentoRodrigoFilomeno.iml" />
+      <module fileurl="file://C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\TP3-Desenvolvimento-Rodrigo-Filomeno.iml" filepath="C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\TP3-Desenvolvimento-Rodrigo-Filomeno.iml" />
+      <module fileurl="file://C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\TP3DesenvolvimentoRodrigoFilomeno.iml" filepath="C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\TP3DesenvolvimentoRodrigoFilomeno.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\app\app.iml" filepath="C:\workspace\TP3-Desenvolvimento-Rodrigo-Filomeno\app\app.iml" />
     </modules>
   </component>
 </project>

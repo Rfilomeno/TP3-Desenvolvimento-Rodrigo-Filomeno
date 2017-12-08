@@ -1,5 +1,8 @@
 package com.example.rodrigo.tp3_desenvolvimento_rodrigo_filomeno;
 
+import android.util.Log;
+import android.widget.Toast;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
@@ -14,15 +17,6 @@ public class Usuario {
 
     String id;
     String Nome;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     String Senha;
     String Email;
     String Telefone;
@@ -45,81 +39,18 @@ public class Usuario {
     }
 
 public void Salvar(){
-    DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
-    referenciaFirebase.child("usuario").child(String.valueOf(getId())).setValue(this);
-}
-
-@Exclude
-public Map<String, Object> toMap(){
-    HashMap<String,Object> hashMapUsuario = new HashMap<>();
-
-    hashMapUsuario.put("email", getEmail());
-    hashMapUsuario.put("nome", getNome());
-    hashMapUsuario.put("senha", getSenha());
-    hashMapUsuario.put("telefone", getTelefone());
-    hashMapUsuario.put("celular", getCelular());
-    hashMapUsuario.put("cpf", getCpf());
-    hashMapUsuario.put("cidade", getCidade());
-
-    return hashMapUsuario;
+    try{
+        DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+        referenciaFirebase.child("usuarios").child(String.valueOf(getId())).setValue(this);
+    }catch (Exception e){
+        Log.e("erro", e.toString());
+    }
+    ;
 }
 
 
-    public String getNome() {
-        return Nome;
+    public String getId() {
+        return id;
     }
-
-    public void setNome(String nome) {
-        Nome = nome;
-    }
-
-    public String getSenha() {
-        return Senha;
-    }
-
-    public void setSenha(String senha) {
-        Senha = senha;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public String getTelefone() {
-        return Telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        Telefone = telefone;
-    }
-
-    public String getCelular() {
-        return Celular;
-    }
-
-    public void setCelular(String celular) {
-        Celular = celular;
-    }
-
-    public String getCpf() {
-        return Cpf;
-    }
-
-    public void setCpf(String cpf) {
-        Cpf = cpf;
-    }
-
-    public String getCidade() {
-        return Cidade;
-    }
-
-    public void setCidade(String cidade) {
-        Cidade = cidade;
-    }
-
 
 }

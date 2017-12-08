@@ -1,5 +1,6 @@
 package com.example.rodrigo.tp3_desenvolvimento_rodrigo_filomeno;
 
+import android.content.Intent;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements ValidationListene
 
         usuario.Salvar();
         Mensagem("usuário criado");
+        Clean();
     }
 
     @Override
@@ -126,5 +128,10 @@ public class MainActivity extends AppCompatActivity implements ValidationListene
         Celular.setText("");
         Cpf.setText("");
         Cidade.setText("");
+    }
+
+    public void btnListaUsuarios(View v){
+        Intent intent = new Intent (MainActivity.this, UsuariosActivity.class);
+        startActivity(intent);
     }
 }
