@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "518816794763",
+    "firebase_url": "https://tp3desenvolvimento.firebaseio.com",
+    "project_id": "tp3desenvolvimento",
+    "storage_bucket": "tp3desenvolvimento.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518816794763:android:d8b5ecf77abb3963",
+        "android_client_info": {
+          "package_name": "com.example.rodrigo.tp3_desenvolvimento_rodrigo_filomeno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518816794763-oo06t0a67m6ramj7nqa0iv8kcg9ch52g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rodrigo.tp3_desenvolvimento_rodrigo_filomeno",
+            "certificate_hash": "c0a22ffcdf8cea6807fceabe7d8ce4e87e2a6366"
+          }
+        },
+        {
+          "client_id": "518816794763-k07os35ms85m1d6ole8pouc4ps1d0r9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqoR4Wf9w2QV7CzUQs5NLzIUInXST5ew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518816794763-k07os35ms85m1d6ole8pouc4ps1d0r9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
