@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "518816794763-oo06t0a67m6ramj7nqa0iv8kcg9ch52g.apps.googleusercontent.com",
+          "client_id": "518816794763-s5ijkq4cfonkm78n1iou63jbhdbobdfa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.rodrigo.tp3_desenvolvimento_rodrigo_filomeno",
-            "certificate_hash": "c0a22ffcdf8cea6807fceabe7d8ce4e87e2a6366"
+            "certificate_hash": "524063ba48dcc42c15777b1076ba87e9f8773d74"
           }
         },
         {

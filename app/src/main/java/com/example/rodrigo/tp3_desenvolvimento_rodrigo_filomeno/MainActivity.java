@@ -19,6 +19,7 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
 
 import java.util.List;
+import java.util.UUID;
 
 
 public class MainActivity extends AppCompatActivity implements ValidationListener {
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements ValidationListene
 
     @Override
     public void onValidationSucceeded() {
-        Usuario usuario = new Usuario(Nome.getText().toString(),Senha.getText().toString(),Email.getText().toString(),
+        Usuario usuario = new Usuario(UUID.randomUUID().toString(),Nome.getText().toString(),Senha.getText().toString(),Email.getText().toString(),
                 Telefone.getText().toString(),Celular.getText().toString(),Cpf.getText().toString(),Cidade.getText().toString());
 
         usuario.Salvar();

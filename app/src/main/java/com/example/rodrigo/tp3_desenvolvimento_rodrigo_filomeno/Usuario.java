@@ -12,8 +12,17 @@ import java.util.Map;
 
 public class Usuario {
 
-
+    String id;
     String Nome;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     String Senha;
     String Email;
     String Telefone;
@@ -24,7 +33,8 @@ public class Usuario {
     public Usuario(){
 
     }
-    public Usuario(String nome,String senha,String email,String telefone,String celular,String cpf,String cidade){
+    public Usuario(String id,String nome,String senha,String email,String telefone,String celular,String cpf,String cidade){
+        this.id = id;
         this.Nome = nome;
         this.Senha = senha;
         this.Email = email;
@@ -36,7 +46,7 @@ public class Usuario {
 
 public void Salvar(){
     DatabaseReference referenciaFirebase = ConfiguracaoFirebase.getFirebase();
-    referenciaFirebase.child("usuario").child(String.valueOf(getEmail())).setValue(this);
+    referenciaFirebase.child("usuario").child(String.valueOf(getId())).setValue(this);
 }
 
 @Exclude
